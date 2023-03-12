@@ -1,0 +1,40 @@
+.left-section{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.spotify-logo{
+    position: absolute;
+    width: 164px;
+    height: 49px;
+    left: 29px;
+    top: 32px;
+}
+
+.link-menu-section{
+    margin-top: 111px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.left-button{
+    border-radius: 6px;
+}
+
+.left-logo{
+    width: 30px;
+    height: 30px;
+}
+
+.playlists-menu-section{
+    background-color: black;
+    max-height: 100vh;
+    overflow-x: hidden;
+}
+
+.label{
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 10px;
+}

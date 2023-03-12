@@ -1,0 +1,115 @@
+.player{
+    background: #181818;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.playing-song-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.song-playlist-cover{
+    width: 65px;
+    height: 65px;
+    margin-right: 15px;
+    background: #1DB954;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-playlist-cover{
+    margin-top: 15px;
+    margin-left: 3px;
+}
+
+.text-playlist-cover-title{
+    font-weight: 500;
+    font-size: 10px;
+    text-align: center;
+}
+
+.song-information{
+    margin-right: 15px;
+}
+
+.song-title{
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+}
+
+.song-subtitle{
+    font-weight: 500;
+    font-size: 12px;
+    color: #B3B3B3;
+}
+
+.heart{
+    width: 15px;
+    height: 15px;
+}
+
+.player-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttons-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.progress-bar-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.progress-bar {
+    width: 500px;
+    height: 6px;
+    background: #535353;
+    border-radius: 3px;
+    margin-top: 3px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.text-progress-bar{
+    font-size: 10px;
+    font-weight: 700;
+    color: #C4C4C4;
+}
+
+.player-button{
+    margin: 10px;
+}
+
+.options-section{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.options-button{
+    margin: 5px;
+}
+
+.volume-bar{
+    width: 100px;
+    height: 4px;
+    margin-top: 17px;
+    border-radius: 3px;
+    background: #C4C4C4;
+}

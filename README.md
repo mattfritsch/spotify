@@ -27,8 +27,8 @@
 
 ### Home page
 
--   [ ] Display your playlist
--   [ ] Display all the top 50 playlist given in file `src/static/data.json` by year as displayed on figma
+-   [X] Display your playlist
+-   [X] Display all the top 50 playlist given in file `src/static/data.json` by year as displayed on figma
 -   [ ] Click on a playlist will redirect to the playlist page
 
 ### Playlist page
@@ -52,20 +52,20 @@
 
 ## Left drawer
 
--   [ ] Display spotify icon on top
+-   [X] Display spotify icon on top
 -   [ ] Menu must contain
     -   [ ] Link to home page
-    -   [ ] Button to create a playlist
-        -   [ ] Click on it will open a modal with a text input and add button
-        -   [ ] When creating a playlist you need to generate a linear gradient background color. These color must be random
+    -   [X] Button to create a playlist
+        -   [X] Click on it will open a modal with a text input and add button
+        -   [X] When creating a playlist you need to generate a linear gradient background color. These color must be random
     -   [ ] Link to liked songs
     -   [ ] List and link to all playlist
 
-## Footer
+## Player
 
 -   [ ] On the left display playlist cover with name of music currently selected
--   [ ] Display a fake player in the center
--   [ ] Display fake control button on the right
+-   [X] Display a fake player in the center
+-   [X] Display fake control button on the right
 
 ## General informations
 

@@ -1,0 +1,19 @@
+.button{
+    border-radius: 33px;
+    background: #1DB954;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.createModal{
+    display: flex;
+    width: 200px;
+}
+
+.input{
+    width: 215px;
+    height: 30px;
+    border-radius: 26px;
+    background: #FFFFFF66;
+
+}

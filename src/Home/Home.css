@@ -1,0 +1,35 @@
+.homescreen{
+    height: 100vh;
+    background: linear-gradient(180deg, #222222 0%, #1F1F1F 11.64%, #171717 25.66%, #161616 32.94%, #151515 35.98%, #131313 44.89%, #121212 55.22%, #121212 75.34%, #121212 85.45%, rgba(18, 18, 18, 0) 100%);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.container-title{
+    height: 56px;
+    padding: 40px;
+    font-weight: 700;
+    font-size: 38px;
+    color: #FFFFFF;
+}
+
+.playlists-container{
+    max-height: max-content;
+    overflow-x: hidden;
+}
+
+.container{
+    margin-left: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.playlists{
+    width: 1620px;
+}
