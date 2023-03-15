@@ -1,25 +1,34 @@
 import './Player.css'
 import {Layout} from "antd";
-import {HeartOutlined} from "@ant-design/icons";
+import {useSelector} from "react-redux";
+import {State} from "../store";
+import Heart from "../Heart";
 
 const {Footer} = Layout;
 
 const Player = () => {
+    const playingSong = useSelector((state: State) => state.spotify.playingSong);
+
+    const linearGradient = (color1: string, color2: string) => {
+        return {
+            background: "linear-gradient(" + color1 + "," + color2 + ")"
+        };
+    }
+
     return (
         <>
             <Footer className={"player"} style={{background: '#181818'}}>
                 <div className={"playing-song-section"}>
-                    <div className={"song-playlist-cover"}>
+                    <div className={"song-playlist-cover"} style={linearGradient(playingSong.playlist.firstColor, playingSong.playlist.secondColor)}>
                         <div className={"text-playlist-cover"}>
-                            <p className={"text-playlist-cover-title"}>Name of playlist</p>
-                            <p className={"text-playlist-cover-title"}>juste top50</p>
+                            <p className={"text-playlist-cover-title"}>{playingSong.playlist.title}</p>
                         </div>
                     </div>
                     <div className={"song-information"}>
-                        <p className={"song-title"}>Name of playlist</p>
-                        <p className={"song-subtitle"}>juste top50</p>
+                        <p className={"song-title"}>{playingSong.song.title}</p>
+                        <p className={"song-subtitle"}>{playingSong.song.artist}</p>
                     </div>
-                    <HeartOutlined className={"heart"}/>
+                    <Heart song={playingSong.song}/>
                 </div>
                 <div className={"player-section"}>
                     <div className={"buttons-section"}>
@@ -32,7 +41,7 @@ const Player = () => {
                     <div className={"progress-bar-section"}>
                         <p className={"text-progress-bar"}>0:00</p>
                         <div className={"progress-bar"}></div>
-                        <p className={"text-progress-bar"}>2:42</p>
+                        <p className={"text-progress-bar"}>{playingSong.song.duration}</p>
                     </div>
                 </div>
                 <div className={"options-section"}>

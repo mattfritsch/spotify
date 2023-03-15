@@ -3,7 +3,8 @@ import './index.css';
 import {ConfigProvider, theme} from "antd";
 import {Provider} from "react-redux";
 import store from "./store";
-import Home from "./Home";
+import Spotify from "./Spotify";
+import {Route, Routes} from "react-router-dom";
 
 const App = () => {
     return (
@@ -15,11 +16,16 @@ const App = () => {
                     colorPrimary: '#00b96b',
                     colorBgContainer: '#000000',
                     colorText: '#EEEEEE',
+                    colorTextPlaceholder: '#EEEEEE',
+                    colorIcon: '#00b96b'
                 },
             }}
             >
                 <Provider store={store}>
-                    <Home />
+                    <Routes>
+                        <Route path={""} element={<Spotify/>}/>
+                        <Route path={"/playlist/:playlistTitle"} element={<Spotify/>}/>
+                    </Routes>
                 </Provider>
             </ConfigProvider>
         </>

@@ -26,7 +26,7 @@
 }
 
 .text-playlist-cover{
-    margin-top: 15px;
+    margin-top: 27px;
     margin-left: 3px;
 }
 
@@ -50,11 +50,6 @@
     font-weight: 500;
     font-size: 12px;
     color: #B3B3B3;
-}
-
-.heart{
-    width: 15px;
-    height: 15px;
 }
 
 .player-section{

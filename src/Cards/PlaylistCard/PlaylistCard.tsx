@@ -1,4 +1,5 @@
 import './PlaylistCard.css';
+import {Link} from "react-router-dom";
 
 interface PlaylistCardInterface {
     title: string,
@@ -15,10 +16,12 @@ const linearGradient = (color1: string, color2: string) => {
 const PlaylistCard = ({title, firstColor, secondColor}: PlaylistCardInterface) => {
     return (
         <>
-            <div className={"playlist-card"}>
-                <div className={"playlist-card-cover"} style={linearGradient(firstColor, secondColor)}/>
-                <p className={"playlist-card-title"}>{title}</p>
-            </div>
+            <Link to={"/playlist/" + title}>
+                <div className={"playlist-card"}>
+                    <div className={"playlist-card-cover"} style={linearGradient(firstColor, secondColor)}/>
+                    <p className={"playlist-card-title"}>{title}</p>
+                </div>
+            </Link>
         </>
     );
 }

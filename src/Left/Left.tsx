@@ -4,15 +4,17 @@ import {useState} from "react";
 import CreateModal from "../Modals/CreateModal";
 import {useSelector} from "react-redux";
 import {State} from "../store";
+import {Link} from "react-router-dom";
 
 const { Sider } = Layout;
+
 const Left = () => {
     const [newCreateModal, setNewCreateModal] = useState(false);
-    const customPlaylists = useSelector((state: State) => state.spotify.customPlaylists);
+    const customPlaylists = useSelector((state: State) => state.spotify.customPlaylists.filter(({title}) => title !== 'Liked Songs'));
 
-    const customPlaylistItems = customPlaylists.map(({title}, index) => ({
+    const customPlaylistItems = customPlaylists.map(({id, title}, index) => ({
         key: 4 + index,
-        label: <p className={"label"}>{title}</p>,
+        label: <Link to={"/playlist/" + title}><p className={"label"}>{title}</p></Link>,
         style: {height: '25px'}
     }));
 
@@ -32,7 +34,7 @@ const Left = () => {
                     {
                         key: '1',
                         icon: <img src={"img/left/home.png"} className={"left-logo"} alt={"home logo"}/>,
-                        label: <p className={"label"}>Home</p>,
+                        label: <Link to={"/"}><p className={"label"}>Home</p></Link>,
                         className: "home-button",
                     },
                     {
@@ -45,7 +47,7 @@ const Left = () => {
                     {
                         key: '3',
                         icon: <img src={"img/left/like.png"} className={"left-logo"} alt={"like logo"}/>,
-                        label: <p className={"label"}>Liked Songs</p>,
+                        label: <Link to={"/playlist/Liked Songs"}><p className={"label"}>Liked Songs</p></Link>,
                         className: "left-button",
                     }
                 ]}

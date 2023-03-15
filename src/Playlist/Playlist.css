@@ -1,0 +1,81 @@
+.header-section{
+    height: 195px;
+    background: linear-gradient(90deg, #3DD5F3 0%, #3D8BFD 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.playlist-cover{
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #4000F4 0%, #603AED 22.48%, #7C6EE6 46.93%, #979FE1 65.71%, #A2B3DE 77.68%, #ADC8DC 88.93%, #C0ECD7 100%);
+}
+
+.search-sorts-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.playlist-title{
+    font-weight: 700;
+    font-size: 86px;
+    color: #FFFFFF;
+}
+
+.input-search{
+    width: 275px;
+    height: 32px;
+    border-radius: 26px;
+}
+
+.select-sorts{
+    width: 150px;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
+.songs-table{
+    padding: 10px;
+}
+
+.table-text{
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFFFFF;
+    background: #1e1e1e;
+}
+
+.genre{
+    text-transform: capitalize;
+    width: 660px;
+}
+
+.year{
+    width: 140px;
+    text-align: center;
+}
+
+.title{
+    width: 440px;
+}
+
+.index{
+    width: 20px;
+}
+
+.popularity{
+    width: 80px;
+    text-align: center;
+}
+
+.duration{
+    width: 110px;
+    text-align: right;
+}

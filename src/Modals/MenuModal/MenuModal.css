@@ -1,0 +1,13 @@
+.menuModal{
+    display: flex;
+    width: 200px;
+}
+
+.playlist-lists{
+    width: 245px;
+}
+
+.playlist{
+    font-weight: 500;
+    font-size: 15px;
+}
