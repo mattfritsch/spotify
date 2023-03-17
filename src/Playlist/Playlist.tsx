@@ -34,10 +34,6 @@ const Paylist = () => {
         };
     }
 
-    // const Heart = (song : Song) => {
-    //     if
-    // }
-
     const handleOnSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setNewSearch(e.target.value);
     }
