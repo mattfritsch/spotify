@@ -206,7 +206,8 @@ const Paylist = () => {
                                 onClick: () => {
                                     dispatch(changePlayingSong([playlistSelected, record]))
                                 },
-                                onContextMenu: () => {
+                                onContextMenu: (e) => {
+                                    e.preventDefault();
                                     setNewMenuModal(true)
                                     dispatch(showMenuModal(record))
                                 }
