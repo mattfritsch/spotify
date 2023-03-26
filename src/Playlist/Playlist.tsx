@@ -49,7 +49,6 @@ const Paylist = () => {
         else {
             result = songsPlaylistSelected
         }
-        console.log(result)
         return result
     }
 

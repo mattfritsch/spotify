@@ -79,3 +79,7 @@
     width: 110px;
     text-align: right;
 }
+
+.ant-table-wrapper .ant-table-thead >tr>th, .ant-table-wrapper .ant-table-thead >tr>td{
+    position : unset !important;
+}

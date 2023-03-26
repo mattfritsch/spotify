@@ -15,6 +15,12 @@ const Player = () => {
         };
     }
 
+    const secToMinSec = (sec:number) => {
+        const minutes = Math.floor(sec / 60);
+        const seconds = sec - minutes * 60;
+        return minutes + ':' + seconds;
+    }
+
     return (
         <>
             <Footer className={"player"} style={{background: '#181818'}}>
@@ -41,7 +47,7 @@ const Player = () => {
                     <div className={"progress-bar-section"}>
                         <p className={"text-progress-bar"}>0:00</p>
                         <div className={"progress-bar"}></div>
-                        <p className={"text-progress-bar"}>{playingSong.song.duration}</p>
+                        <p className={"text-progress-bar"}>{secToMinSec(playingSong.song.duration)}</p>
                     </div>
                 </div>
                 <div className={"options-section"}>
